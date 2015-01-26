@@ -1,0 +1,24 @@
+.menu-options {
+  text-align:center;
+  margin:0 auto;
+  width:40%;
+  margin-top:100px;
+  color:$black;
+  background-color:$white;
+  border-radius:5px;
+  padding:20px;
+  @extend .shadow;
+}
+
+#opacity-slider {
+  width:50%;
+  margin:0 auto;
+  margin-top:20px;
+}
+
+#opacity-value {
+  width:50%;
+  margin:0 auto;
+  text-align:center;
+  margin-top:10px;
+}

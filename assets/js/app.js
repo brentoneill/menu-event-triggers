@@ -85,20 +85,45 @@ $(document).ready(function() {
 
   /////////////////////////////////////
   //Change background opacity for menu based on user choice
-  $('.opacity').change(function(){
-    var opSel = $(this).val();
-    if(opSel == "opaque") {
-      $('nav').css("background-color","rgba(0,0,0,1);");
-    }
-    else if(opSel == "semi-trans") {
-      $('nav').css("background-color","rgba(0,0,0,.5);");
-    }
-    else if(opSel == "trans") {
-      $('nav').css("background-color","rgba(0,0,0,0);");
-    }
+  $( "#opacity-slider" ).on( "slidechange", function( event, ui ) {
+    var opSel = $(this).slider('option','value');
+    $('nav').css("background-color","rgba(0,0,0,"+opSel+")")
 
   });
   /////////////////////////////////////
   /////////////////////////////////////
 
+
+  /////////////////////////////////////
+  //Font Select////////////////////////
+  $('select.font-select').change(function() {
+    var opSel = $(this).val();
+    if(opSel=="serif") {
+      $('body').css("font-family","Bree Serif");
+    }
+    else if(opSel=="sans-serif"){
+      $('body').css("font-family","Julius Sans One");
+    }
+    else if(opSell="cursive") {
+      $('body').css("font-family","Amatic SC");
+    }
+  });
+  /////////////////////////////////////
+  /////////////////////////////////////
+
+
+  /////////////////////////////////////
+  //Toggle Link Borders////////////////
+  $('#border-select').on('change', function() {
+    var opSel=$('input[name=border-option]:checked', '#border-select').val();
+    console.log(opSel)
+    if(opSel=="no-border"){
+      $('nav ul a').css("border","none");
+    }
+    else if(opSel=="border"){
+      $('nav ul a').css("border","thin solid white");
+    }
+  });
+  /////////////////////////////////////
+  /////////////////////////////////////
 });

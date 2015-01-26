@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One); //sans-serif
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif); //serif font
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC); //cursive
 
 $font : 'Julius Sans One', sans-serif;
 
@@ -15,5 +17,9 @@ body {
   background-color:#155C55;
   font-family:'Julius Sans One', sans-serif;
   margin:0;
+  padding:0;
+}
+ul {
+  list-style-type:none;
   padding:0;
 }

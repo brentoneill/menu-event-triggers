@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
 .shadow, nav, .button-container .menu-button, .button-container .full-screen-menu, .menu-options {
   -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
@@ -8,6 +10,10 @@ body {
   background-color: #155C55;
   font-family: 'Julius Sans One', sans-serif;
   margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
   padding: 0; }
 
 a {
@@ -73,7 +79,6 @@ nav {
     margin-top: 200px;
     width: 40%;
     color: white;
-    border: thin solid white;
     padding: 40px;
     text-align: center;
     overflow: auto;
@@ -83,6 +88,27 @@ nav {
       float: left;
       width: 50%;
       text-align: left; }
+
+.menu-options {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 100px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px; }
+
+#opacity-slider {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+#opacity-value {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px; }
 
 .enlarge {
   transform: scale(1.2); }
@@ -107,16 +133,5 @@ nav {
 
 .hidden {
   display: none; }
-
-.menu-options {
-  text-align: center;
-  margin: 0 auto;
-  width: 50%;
-  height: 200px;
-  margin-top: 100px;
-  color: black;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px; }
 
 /*# sourceMappingURL=compiled.css.map */
