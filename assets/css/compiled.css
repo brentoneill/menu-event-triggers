@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+.shadow, nav, .button-container .menu-button, .button-container .full-screen-menu, .menu-options {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75); }
+
+body {
+  background-color: #155C55;
+  font-family: 'Julius Sans One', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  color: white; }
+
+nav {
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 200px;
+  transition: all .5s ease-in-out;
+  opacity: 1; }
+  nav ul {
+    text-align: left;
+    padding: 20px;
+    list-style-type: none; }
+    nav ul li {
+      margin-bottom: 10px; }
+    nav ul a {
+      display: inline-block;
+      padding: 10px;
+      width: 140px;
+      border: solid thin white;
+      transition: all .5s ease-in-out; }
+      nav ul a:hover {
+        border-radius: 10px;
+        border-color: #32DBCC;
+        color: #32DBCC; }
+
+.button-container {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  transition: all .5s ease-in-out; }
+  .button-container .menu-button, .button-container .full-screen-menu {
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .button-container .menu-button:hover, .button-container .full-screen-menu:hover {
+      cursor: pointer;
+      color: #32DBCC; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: all .5s ease-in-out; }
+  .overlay .menu {
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 40%;
+    color: white;
+    border: thin solid white;
+    padding: 40px;
+    text-align: center;
+    overflow: auto;
+    border-radius: 5px; }
+    .overlay .menu .left, .overlay .menu .right {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      text-align: left; }
+
+.enlarge {
+  transform: scale(1.2); }
+
+.shrink {
+  transform: scale(0.8); }
+
+.spin {
+  transform: rotate(360deg); }
+
+.flush {
+  left: 240px; }
+
+.off-left {
+  left: -1000px;
+  width: 0px; }
+
+.active {
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+
+.hidden {
+  display: none; }
+
+.menu-options {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 200px;
+  margin-top: 100px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px; }
+
+/*# sourceMappingURL=compiled.css.map */

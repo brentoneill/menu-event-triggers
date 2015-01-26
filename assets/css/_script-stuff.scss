@@ -1,0 +1,25 @@
+.enlarge {
+  transform: scale(1.2);
+}
+.shrink {
+  transform: scale(.8);
+}
+.spin {
+  transform: rotate(360deg);
+}
+.flush {
+  left:240px;
+}
+.off-left {
+  left:-1000px;
+  width:0px;
+}
+
+.active {
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+.hidden {
+  display:none;
+}
