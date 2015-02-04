@@ -116,7 +116,6 @@ $(document).ready(function() {
   //Toggle Link Borders////////////////
   $('#border-select').on('change', function() {
     var opSel=$('input[name=border-option]:checked', '#border-select').val();
-    console.log(opSel)
     if(opSel=="no-border"){
       $('nav ul a').css("border","none");
     }
